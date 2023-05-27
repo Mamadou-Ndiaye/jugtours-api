@@ -1,4 +1,7 @@
 package sn.ucad.jugtours.repository;
 
-public interface EventRepository extends org.springframework.data.jpa.repository.JpaRepository<sn.ucad.jugtours.model.Event, java.lang.Long> {
+import org.springframework.data.jpa.repository.JpaRepository;
+import sn.ucad.jugtours.model.Event;
+
+public interface EventRepository extends JpaRepository<Event, Long> {
 }

@@ -1,4 +1,7 @@
 package sn.ucad.jugtours.repository;
 
-public interface UserRepository extends org.springframework.data.jpa.repository.JpaRepository<sn.ucad.jugtours.model.User, java.lang.Long> {
+import org.springframework.data.jpa.repository.JpaRepository;
+import sn.ucad.jugtours.model.User;
+
+public interface UserRepository extends JpaRepository<User, Long> {
 }

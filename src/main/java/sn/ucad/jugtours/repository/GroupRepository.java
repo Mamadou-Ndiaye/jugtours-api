@@ -1,4 +1,9 @@
 package sn.ucad.jugtours.repository;
 
-public interface GroupRepository extends org.springframework.data.jpa.repository.JpaRepository<sn.ucad.jugtours.model.Group, java.lang.Long> {
+import org.springframework.data.jpa.repository.JpaRepository;
+import sn.ucad.jugtours.model.Group;
+
+public interface GroupRepository extends JpaRepository<Group, Long> {
+    Group findByName(String name);
+
 }
